@@ -1,0 +1,3 @@
+/home/merjem/qemu-mcp/build/CMakeFiles/qemu-mcp.dir
+/home/merjem/qemu-mcp/build/CMakeFiles/edit_cache.dir
+/home/merjem/qemu-mcp/build/CMakeFiles/rebuild_cache.dir

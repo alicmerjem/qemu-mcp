@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/merjem/qemu-mcp/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
