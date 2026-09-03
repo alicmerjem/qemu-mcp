@@ -53,10 +53,16 @@ json McpServer::handle_tools_call(const json& params) {
         if (tool.name == tool_name) {
             try {
                 json result = tool.handler(arguments);
-                return {
-                    {"content", json::array({
+                json content;
+                if (result.contains("__mcp_content__")) {
+                    content = result.at("__mcp_content__");
+                } else {
+                    content = json::array({
                         {{"type", "text"}, {"text", result.dump()}}
-                    })},
+                    });
+                }
+                return {
+                    {"content", content},
                     {"isError", false}
                 };
             } catch (const std::exception& e) {
@@ -79,7 +85,6 @@ json McpServer::handle_tools_call(const json& params) {
 }
 
 std::optional<json> McpServer::handle_message(const json& msg) {
-    // Notifications have no "id" and expect no response.
     const bool is_notification = !msg.contains("id");
     const std::string method = msg.value("method", "");
     const json params = msg.value("params", json::object());
@@ -89,7 +94,7 @@ std::optional<json> McpServer::handle_message(const json& msg) {
         return make_result(id, handle_initialize(params));
     }
     if (method == "notifications/initialized") {
-        return std::nullopt; // no response required
+        return std::nullopt;
     }
     if (method == "tools/list") {
         return make_result(id, handle_tools_list());

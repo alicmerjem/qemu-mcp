@@ -13,6 +13,8 @@ add_compile_options(-Wall -Wextra)
 add_executable(qemu-mcp
     src/main.cpp
     src/mcp_server.cpp
+    src/qemu_instance.cpp
+    src/qmp_client.cpp
 )
 
 target_include_directories(qemu-mcp PRIVATE

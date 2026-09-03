@@ -1,6 +1,6 @@
-CMakeFiles/qemu-mcp.dir/src/main.cpp.o: \
- /home/merjem/qemu-mcp/src/main.cpp /usr/include/stdc-predef.h \
- /home/merjem/qemu-mcp/include/mcp_server.hpp /usr/include/c++/15/string \
+CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.o: \
+ /home/merjem/qemu-mcp/src/qmp_client.cpp /usr/include/stdc-predef.h \
+ /home/merjem/qemu-mcp/include/qmp_client.hpp /usr/include/c++/15/string \
  /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -120,7 +120,18 @@ CMakeFiles/qemu-mcp.dir/src/main.cpp.o: \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
  /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/functional \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/merjem/qemu-mcp/third_party/json.hpp /usr/include/c++/15/algorithm \
+ /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
+ /usr/include/c++/15/bits/stl_tempbuf.h \
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/functional \
  /usr/include/c++/15/bits/std_function.h /usr/include/c++/15/typeinfo \
  /usr/include/c++/15/unordered_map \
  /usr/include/c++/15/bits/unordered_map.h \
@@ -130,18 +141,7 @@ CMakeFiles/qemu-mcp.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/enable_special_members.h \
  /usr/include/c++/15/bits/node_handle.h \
  /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/array \
- /usr/include/c++/15/compare /usr/include/c++/15/optional \
- /usr/include/c++/15/exception /usr/include/c++/15/bits/exception_ptr.h \
- /usr/include/c++/15/bits/cxxabi_init_exception.h \
- /usr/include/c++/15/bits/nested_exception.h \
- /home/merjem/qemu-mcp/third_party/json.hpp /usr/include/c++/15/algorithm \
- /usr/include/c++/15/bits/stl_algo.h \
- /usr/include/c++/15/bits/algorithmfwd.h \
- /usr/include/c++/15/bits/stl_heap.h \
- /usr/include/c++/15/bits/uniform_int_dist.h \
- /usr/include/c++/15/bits/stl_tempbuf.h \
- /usr/include/c++/15/pstl/glue_algorithm_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/iterator \
+ /usr/include/c++/15/compare /usr/include/c++/15/iterator \
  /usr/include/c++/15/bits/stream_iterator.h \
  /usr/include/c++/15/bits/streambuf_iterator.h \
  /usr/include/c++/15/streambuf /usr/include/c++/15/bits/ios_base.h \
@@ -174,8 +174,11 @@ CMakeFiles/qemu-mcp.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/locale_classes.tcc \
  /usr/include/c++/15/system_error \
  /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h \
- /usr/include/c++/15/stdexcept /usr/include/c++/15/bits/streambuf.tcc \
- /usr/include/c++/15/memory \
+ /usr/include/c++/15/stdexcept /usr/include/c++/15/exception \
+ /usr/include/c++/15/bits/exception_ptr.h \
+ /usr/include/c++/15/bits/cxxabi_init_exception.h \
+ /usr/include/c++/15/bits/nested_exception.h \
+ /usr/include/c++/15/bits/streambuf.tcc /usr/include/c++/15/memory \
  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
  /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
  /usr/include/c++/15/bits/shared_ptr.h \
@@ -224,16 +227,13 @@ CMakeFiles/qemu-mcp.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/gslice.h \
  /usr/include/c++/15/bits/gslice_array.h \
  /usr/include/c++/15/bits/mask_array.h \
- /usr/include/c++/15/bits/indirect_array.h /usr/include/c++/15/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/15/version /usr/include/c++/15/cassert \
- /usr/include/assert.h /usr/include/c++/15/cstring /usr/include/string.h \
- /usr/include/strings.h /usr/include/c++/15/filesystem \
- /usr/include/c++/15/bits/fs_fwd.h /usr/include/c++/15/bits/chrono.h \
- /usr/include/c++/15/ratio /usr/include/c++/15/ctime \
- /usr/include/c++/15/bits/parse_numbers.h \
+ /usr/include/c++/15/bits/indirect_array.h /usr/include/c++/15/version \
+ /usr/include/c++/15/cassert /usr/include/assert.h \
+ /usr/include/c++/15/optional /usr/include/c++/15/cstring \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
+ /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
+ /usr/include/c++/15/ctime /usr/include/c++/15/bits/parse_numbers.h \
  /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/locale \
  /usr/include/c++/15/bits/locale_facets.h /usr/include/c++/15/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
@@ -256,5 +256,27 @@ CMakeFiles/qemu-mcp.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
  /usr/include/c++/15/numeric /usr/include/c++/15/bits/stl_numeric.h \
  /usr/include/c++/15/pstl/glue_numeric_defs.h /usr/include/c++/15/any \
- /home/merjem/qemu-mcp/include/qemu_instance.hpp \
- /home/merjem/qemu-mcp/include/qmp_client.hpp
+ /usr/include/c++/15/fstream \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
+ /usr/include/c++/15/bits/fstream.tcc \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /home/merjem/qemu-mcp/third_party/stb_image_write.h \
+ /usr/include/c++/15/stdlib.h /usr/include/c++/15/math.h

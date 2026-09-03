@@ -177,6 +177,54 @@ src/mcp_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/mcp_server.cpp.s
 .PHONY : src/mcp_server.cpp.s
 
+src/qemu_instance.o: src/qemu_instance.cpp.o
+.PHONY : src/qemu_instance.o
+
+# target to build an object file
+src/qemu_instance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.o
+.PHONY : src/qemu_instance.cpp.o
+
+src/qemu_instance.i: src/qemu_instance.cpp.i
+.PHONY : src/qemu_instance.i
+
+# target to preprocess a source file
+src/qemu_instance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.i
+.PHONY : src/qemu_instance.cpp.i
+
+src/qemu_instance.s: src/qemu_instance.cpp.s
+.PHONY : src/qemu_instance.s
+
+# target to generate assembly for a file
+src/qemu_instance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.s
+.PHONY : src/qemu_instance.cpp.s
+
+src/qmp_client.o: src/qmp_client.cpp.o
+.PHONY : src/qmp_client.o
+
+# target to build an object file
+src/qmp_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.o
+.PHONY : src/qmp_client.cpp.o
+
+src/qmp_client.i: src/qmp_client.cpp.i
+.PHONY : src/qmp_client.i
+
+# target to preprocess a source file
+src/qmp_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.i
+.PHONY : src/qmp_client.cpp.i
+
+src/qmp_client.s: src/qmp_client.cpp.s
+.PHONY : src/qmp_client.s
+
+# target to generate assembly for a file
+src/qmp_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.s
+.PHONY : src/qmp_client.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +240,12 @@ help:
 	@echo "... src/mcp_server.o"
 	@echo "... src/mcp_server.i"
 	@echo "... src/mcp_server.s"
+	@echo "... src/qemu_instance.o"
+	@echo "... src/qemu_instance.i"
+	@echo "... src/qemu_instance.s"
+	@echo "... src/qmp_client.o"
+	@echo "... src/qmp_client.i"
+	@echo "... src/qmp_client.s"
 .PHONY : help
 
 

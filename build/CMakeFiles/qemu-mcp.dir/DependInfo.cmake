@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/merjem/qemu-mcp/src/main.cpp" "CMakeFiles/qemu-mcp.dir/src/main.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/main.cpp.o.d"
   "/home/merjem/qemu-mcp/src/mcp_server.cpp" "CMakeFiles/qemu-mcp.dir/src/mcp_server.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/mcp_server.cpp.o.d"
+  "/home/merjem/qemu-mcp/src/qemu_instance.cpp" "CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.o.d"
+  "/home/merjem/qemu-mcp/src/qmp_client.cpp" "CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.o.d"
   "" "qemu-mcp" "gcc" "CMakeFiles/qemu-mcp.dir/link.d"
   )
 
