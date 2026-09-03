@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/merjem/qemu-mcp/src/event_log.cpp" "CMakeFiles/qemu-mcp.dir/src/event_log.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/event_log.cpp.o.d"
   "/home/merjem/qemu-mcp/src/gdb_client.cpp" "CMakeFiles/qemu-mcp.dir/src/gdb_client.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/gdb_client.cpp.o.d"
   "/home/merjem/qemu-mcp/src/main.cpp" "CMakeFiles/qemu-mcp.dir/src/main.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/main.cpp.o.d"
   "/home/merjem/qemu-mcp/src/mcp_server.cpp" "CMakeFiles/qemu-mcp.dir/src/mcp_server.cpp.o" "gcc" "CMakeFiles/qemu-mcp.dir/src/mcp_server.cpp.o.d"

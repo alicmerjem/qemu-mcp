@@ -7,6 +7,7 @@ qemu-mcp: \
   CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.o \
   CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.o \
   CMakeFiles/qemu-mcp.dir/src/gdb_client.cpp.o \
+  CMakeFiles/qemu-mcp.dir/src/event_log.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -50,6 +51,8 @@ CMakeFiles/qemu-mcp.dir/src/qemu_instance.cpp.o:
 CMakeFiles/qemu-mcp.dir/src/qmp_client.cpp.o:
 
 CMakeFiles/qemu-mcp.dir/src/gdb_client.cpp.o:
+
+CMakeFiles/qemu-mcp.dir/src/event_log.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 

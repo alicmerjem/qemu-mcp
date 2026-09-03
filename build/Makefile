@@ -129,6 +129,30 @@ qemu-mcp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/build
 .PHONY : qemu-mcp/fast
 
+src/event_log.o: src/event_log.cpp.o
+.PHONY : src/event_log.o
+
+# target to build an object file
+src/event_log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/event_log.cpp.o
+.PHONY : src/event_log.cpp.o
+
+src/event_log.i: src/event_log.cpp.i
+.PHONY : src/event_log.i
+
+# target to preprocess a source file
+src/event_log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/event_log.cpp.i
+.PHONY : src/event_log.cpp.i
+
+src/event_log.s: src/event_log.cpp.s
+.PHONY : src/event_log.s
+
+# target to generate assembly for a file
+src/event_log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qemu-mcp.dir/build.make CMakeFiles/qemu-mcp.dir/src/event_log.cpp.s
+.PHONY : src/event_log.cpp.s
+
 src/gdb_client.o: src/gdb_client.cpp.o
 .PHONY : src/gdb_client.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... qemu-mcp"
+	@echo "... src/event_log.o"
+	@echo "... src/event_log.i"
+	@echo "... src/event_log.s"
 	@echo "... src/gdb_client.o"
 	@echo "... src/gdb_client.i"
 	@echo "... src/gdb_client.s"

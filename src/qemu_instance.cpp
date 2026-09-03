@@ -50,6 +50,9 @@ std::vector<std::string> QemuInstance::build_argv(const QemuLaunchParams& params
     argv.push_back("-qmp");
     argv.push_back("unix:" + qmp_socket_path_ + ",server,nowait");
 
+    argv.push_back("-qmp");
+    argv.push_back("unix:" + qmp_events_socket_path_ + ",server,nowait");
+
     argv.push_back("-serial");
     argv.push_back("file:" + serial_log_path_);
 
@@ -74,6 +77,7 @@ void QemuInstance::launch(const QemuLaunchParams& params) {
     gdb_port_ = params.gdb_port;
     work_dir_ = make_work_dir(getpid());
     qmp_socket_path_ = work_dir_ + "/qmp.sock";
+    qmp_events_socket_path_ = work_dir_ + "/qmp-events.sock";
     serial_log_path_ = work_dir_ + "/serial.log";
 
     int fd = open(serial_log_path_.c_str(), O_CREAT | O_WRONLY | O_TRUNC, 0644);

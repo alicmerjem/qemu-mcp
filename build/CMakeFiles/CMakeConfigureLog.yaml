@@ -1909,3 +1909,41 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.46
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-4.2/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "/usr/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/merjem/qemu-mcp/build/CMakeFiles/CMakeScratch/TryCompile-7j5AOU"
+      binary: "/home/merjem/qemu-mcp/build/CMakeFiles/CMakeScratch/TryCompile-7j5AOU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/merjem/qemu-mcp/build/CMakeFiles/CMakeScratch/TryCompile-7j5AOU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_28dc5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_28dc5.dir/build.make CMakeFiles/cmTC_28dc5.dir/build
+        gmake[1]: Entering directory '/home/merjem/qemu-mcp/build/CMakeFiles/CMakeScratch/TryCompile-7j5AOU'
+        Building CXX object CMakeFiles/cmTC_28dc5.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_28dc5.dir/src.cxx.o -c /home/merjem/qemu-mcp/build/CMakeFiles/CMakeScratch/TryCompile-7j5AOU/src.cxx
+        Linking CXX executable cmTC_28dc5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28dc5.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_28dc5.dir/src.cxx.o -o cmTC_28dc5
+        gmake[1]: Leaving directory '/home/merjem/qemu-mcp/build/CMakeFiles/CMakeScratch/TryCompile-7j5AOU'
+        
+      exitCode: 0
+...

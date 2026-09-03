@@ -27,6 +27,7 @@ public:
     pid_t pid() const { return pid_; }
     int gdb_port() const { return gdb_port_; }
     const std::string& qmp_socket_path() const { return qmp_socket_path_; }
+    const std::string& qmp_events_socket_path() const { return qmp_events_socket_path_; }
     const std::string& serial_log_path() const { return serial_log_path_; }
     const std::string& work_dir() const { return work_dir_; }
 
@@ -34,6 +35,7 @@ private:
     pid_t pid_ = -1;
     int gdb_port_ = 0;
     std::string qmp_socket_path_;
+    std::string qmp_events_socket_path_;
     std::string serial_log_path_;
     std::string work_dir_;
 
