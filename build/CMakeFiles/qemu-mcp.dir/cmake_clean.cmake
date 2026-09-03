@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/qemu-mcp.dir/link.d"
+  "CMakeFiles/qemu-mcp.dir/src/gdb_client.cpp.o"
+  "CMakeFiles/qemu-mcp.dir/src/gdb_client.cpp.o.d"
   "CMakeFiles/qemu-mcp.dir/src/main.cpp.o"
   "CMakeFiles/qemu-mcp.dir/src/main.cpp.o.d"
   "CMakeFiles/qemu-mcp.dir/src/mcp_server.cpp.o"
